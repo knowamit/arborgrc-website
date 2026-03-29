@@ -4,23 +4,19 @@ import Image from "next/image";
 const PRODUCT_LINKS = [
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Changelog", href: "/changelog" },
-  { label: "Roadmap", href: "/roadmap" },
+  { label: "Get Early Access", href: "#get-started" },
 ] as const;
 
 const FRAMEWORK_LINKS = [
-  { label: "ISO 27001", href: "/frameworks/iso-27001" },
-  { label: "UAE-IA", href: "/frameworks/uae-ia" },
-  { label: "ISO 31000", href: "/frameworks/iso-31000" },
-  { label: "ITIL 4", href: "/frameworks/itil-4" },
-  { label: "SOC 2", href: "/frameworks/soc-2" },
+  { label: "ISO 27001", href: "#frameworks" },
+  { label: "UAE-IA", href: "#frameworks" },
+  { label: "ISO 31000", href: "#frameworks" },
+  { label: "ITIL 4", href: "#frameworks" },
+  { label: "SOC 2", href: "#frameworks" },
 ] as const;
 
 const COMPANY_LINKS = [
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-  { label: "Blog", href: "/blog" },
-  { label: "Careers", href: "/careers" },
+  { label: "Contact Us", href: "#get-started" },
 ] as const;
 
 export default function Footer() {
@@ -52,7 +48,7 @@ export default function Footer() {
               </span>
             </Link>
 
-            <p className="text-sm leading-relaxed max-w-[240px]">
+            <p className="text-sm leading-relaxed max-w-[260px]">
               Enterprise-grade governance, risk and compliance — built for teams
               that move fast without cutting corners.
             </p>
@@ -125,6 +121,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="mailto:info@arborgrc.com"
+                  className="text-sm hover:text-white transition-colors duration-150"
+                >
+                  info@arborgrc.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -136,20 +140,6 @@ export default function Footer() {
           <p className="text-xs text-stone-500">
             Built with care in Dubai &amp; Bangalore
           </p>
-          <div className="flex items-center gap-4">
-            <Link
-              href="/privacy"
-              className="text-xs text-stone-500 hover:text-white transition-colors duration-150"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-xs text-stone-500 hover:text-white transition-colors duration-150"
-            >
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
