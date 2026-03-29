@@ -53,9 +53,6 @@ export default function Footer() {
               that move fast without cutting corners.
             </p>
 
-            <p className="text-xs text-stone-500 mt-auto">
-              &copy; {currentYear} ArborGRC. All rights reserved.
-            </p>
           </div>
 
           {/* Col 2 — Product */}
